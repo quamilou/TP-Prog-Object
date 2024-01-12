@@ -3,25 +3,13 @@ public class Compteur {
 	private boolean lampe;
 	private int valeur;
 	
-	public static void main(String[] args) {
-		Compteur cpt;
-		cpt = new Compteur();
-		cpt.initialisation(10, 100);
-		while (cpt.depassement() == false) {
-			cpt.afficher();
-			cpt.incrementer();
-		}
-		cpt.raz();
-		cpt.afficher();
-	}
-
 	public void initialisation(int valDebut, int valLimite) {//Donne les valeurs en entrée
 		
 		valeur = valDebut;
 		limite = valLimite;
 		lampe = false;
 		
-		System.out.println();
+		System.out.println("Je passe ici ");
 	}
 	
 	public void incrementer() {//Incrementation
